@@ -1,0 +1,36 @@
+.select2-container--bootstrap .select2-search--dropdown .select2-search__field {
+    border-radius: 0;
+    padding: 6px;
+}
+
+.select2-search.select2tree {
+    display: table;
+}
+
+.select2-search.select2tree .select2-search__field {
+    margin-left: 0;
+    width: 100%;
+}
+
+.select2-search.select2tree .select2tree_back {
+    background: #e2e2e2;
+    border: 1px solid #ccc;
+}
+
+.select2-search.select2tree .select2tree_back:hover {
+    background: #ccc;
+}
+
+.select2-results__option.select2tree-with_child {
+    font-weight: bold;
+}
+
+.select2tree-use_button {
+    background: #e2e2e2;
+}
+
+.select2tree-use_button, .select2tree-use_button:hover {
+    width: 30%;
+    margin: 0 !important;
+    padding: 0 !important;;
+}

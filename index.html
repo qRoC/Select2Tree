@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Select2Tree Example page</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/css/select2.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2-bootstrap-theme/0.1.0-beta.10/select2-bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="/select2tree.css"/>
+</head>
+<body>
+
+<div class="row">
+    <div class="col-sm-offset-1 col-sm-10">
+        <form class="form-horizontal">
+            <div class="form-group">
+                <label for="default_example" class="col-sm-4 control-label">Default</label>
+                <div class="col-sm-3">
+                    <select class="form-control" id="default_example">
+                        <option value="1">Books & Audible</option>
+                        <option value="2">Biographies & Memoirs</option>
+                        <option value="3">Children's & Teens</option>
+                        <option value="4">History</option>
+                        <option value="5">Literature & Fiction</option>
+                        <option value="6">Romance</option>
+
+                        <option value="7">Movies, Music & Games</option>
+                        <option value="8">Action & Adventure</option>
+                        <option value="9">Comedy</option>
+                        <option value="10">Drama</option>
+
+                        <option value="11">DVD</option>
+                        <option value="12">Blu-ray</option>
+                        <option value="13">4K Ultra HD</option>
+
+                        <option value="17">DVD</option>
+                        <option value="18">Blu-ray</option>
+                        <option value="19">4K Ultra HD</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="select2_example" class="col-sm-4 control-label">Select2</label>
+                <div class="col-sm-3">
+                    <select class="form-control" id="select2_example">
+                        <option value="1">Books & Audible</option>
+                        <option value="2">Biographies & Memoirs</option>
+                        <option value="3">Children's & Teens</option>
+                        <option value="4">History</option>
+                        <option value="5">Literature & Fiction</option>
+                        <option value="6">Romance</option>
+
+                        <option value="7">Movies, Music & Games</option>
+                        <option value="8">Action & Adventure</option>
+                        <option value="9">Comedy</option>
+                        <option value="10">Drama</option>
+
+                        <option value="11">DVD</option>
+                        <option value="12">Blu-ray</option>
+                        <option value="13">4K Ultra HD</option>
+
+                        <option value="17">DVD</option>
+                        <option value="18">Blu-ray</option>
+                        <option value="19">4K Ultra HD</option>
+                    </select>
+                </div>
+                <div class="col-sm-5">
+                    <pre>$('#select2example').select2({theme: 'bootstrap'});</pre>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="select2tree_example" class="col-sm-4 control-label">Select2 + Select2Tree</label>
+                <div class="col-sm-3">
+                    <select class="form-control" id="select2tree_example">
+                        <option value="1" parent="0">Books & Audible</option>
+                        <option value="2" parent="1">Biographies & Memoirs</option>
+                        <option value="3" parent="1">Children's & Teens</option>
+                        <option value="4" parent="1">History</option>
+                        <option value="5" parent="1">Literature & Fiction</option>
+                        <option value="6" parent="1">Romance</option>
+
+                        <option value="7" parent="0">Movies, Music & Games</option>
+                        <option value="8" parent="7">Action & Adventure</option>
+                        <option value="9" parent="7">Comedy</option>
+                        <option value="10" parent="7">Drama</option>
+
+                        <option value="11" parent="8">DVD</option>
+                        <option value="12" parent="8">Blu-ray</option>
+                        <option value="13" parent="8">4K Ultra HD</option>
+
+                        <option value="17" parent="10">DVD</option>
+                        <option value="18" parent="10">Blu-ray</option>
+                        <option value="19" parent="10">4K Ultra HD</option>
+                    </select>
+                </div>
+                <div class="col-sm-5">
+                    <pre>
+$('#select2tree_example').select2({theme: 'bootstrap'});
+$('#select2tree_example').select2tree();</pre>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="select2tree_use_example" class="col-sm-4 control-label">Select2 + Select2Tree(with Use
+                    button)</label>
+                <div class="col-sm-3">
+                    <select class="form-control" id="select2tree_use_example">
+                        <option value="1" parent="0">Books & Audible</option>
+                        <option value="2" parent="1">Biographies & Memoirs</option>
+                        <option value="3" parent="1">Children's & Teens</option>
+                        <option value="4" parent="1">History</option>
+                        <option value="5" parent="1">Literature & Fiction</option>
+                        <option value="6" parent="1">Romance</option>
+
+                        <option value="7" parent="0">Movies, Music & Games</option>
+                        <option value="8" parent="7">Action & Adventure</option>
+                        <option value="9" parent="7">Comedy</option>
+                        <option value="10" parent="7">Drama</option>
+
+                        <option value="11" parent="8">DVD</option>
+                        <option value="12" parent="8">Blu-ray</option>
+                        <option value="13" parent="8">4K Ultra HD</option>
+
+                        <option value="17" parent="10">DVD</option>
+                        <option value="18" parent="10">Blu-ray</option>
+                        <option value="19" parent="10">4K Ultra HD</option>
+                    </select>
+                </div>
+                <div class="col-sm-5">
+                    <pre>
+$('#select2tree_use_example').select2({theme: 'bootstrap'});
+$('#select2tree_use_example').select2tree({
+    useButtonLabel: 'Use'
+});</pre>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/js/select2.min.js"></script>
+<script src="/select2tree.min.js"></script>
+<script type="text/javascript">
+  $('#select2_example').select2({theme: 'bootstrap'});
+
+  $('#select2tree_example').select2({theme: 'bootstrap'});
+  $('#select2tree_example').select2tree();
+
+  $('#select2tree_use_example').select2({theme: 'bootstrap'});
+  $('#select2tree_use_example').select2tree({
+    useButtonLabel: 'Use'
+  });
+</script>
+</body>
+</html>
