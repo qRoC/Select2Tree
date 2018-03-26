@@ -111,7 +111,7 @@
    * @return {TreeNode}
    */
   Tree.prototype.get = function(id) {
-    if (id) {
+    if (typeof id === 'number') {
       for (var i = 0; i < this._nodes.length; i++) {
         if (this._nodes[i].getId() === id) {
           return this._nodes[i];
